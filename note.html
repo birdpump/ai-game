@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Note Taking Website</title>
+</head>
+
+<body>
+
+<h1>Note Taking Website</h1>
+
+<textarea id="notes"></textarea>
+
+<button onclick="saveNotes()">Save Notes</button>
+
+<a href="view-notes.html">View Notes</a>
+
+<script>
+function saveNotes() {
+  // Get the value of the notes from the text area
+  var notes = document.getElementById("notes").value;
+
+  // Save the notes to local storage
+  localStorage.setItem("notes", notes);
+}
+</script>
+
+</body>
+</html>
